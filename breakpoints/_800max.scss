@@ -1,0 +1,77 @@
+body {
+  main {
+    #hotel-intro {
+      .onsen, .facility-info {
+        display: block;
+        justify-content: none;
+        position: relative;
+        &__text {
+          padding-top: 400px;
+          padding-left: 0;
+          width: 90%;
+          text-align: center;
+          margin: 0 auto;
+          p {
+            text-align: left;
+            padding-right: 0;
+          }
+          a {
+            button {
+              margin: 30px auto 0;
+              &:hover {
+                margin-left: 2px;
+              }
+            }
+          }
+        }
+        &__img {
+          position: absolute;
+          width: 100%;
+          top: 20%;
+          left: 0;
+          img {
+            width: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .dishes {
+        display: block;
+        justify-content: none;
+        &__img {
+          padding-top: 160px;
+          width: 100%;
+          top: 15%;
+          img {
+            width: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        &__text {
+          width: 90%;
+          padding-top: 250px;
+          padding-left: 0;
+          text-align: center;
+          margin: 0 auto;
+          p {
+            text-align: left;
+            padding-right: 0;
+          }
+          a {
+            button {
+              margin: 30px auto 0;
+              &:hover {
+                margin-left: 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #access {
+      margin-top: 200px;
+    }
+  }
+}
