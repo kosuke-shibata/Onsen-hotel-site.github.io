@@ -1,0 +1,1036 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f0e8cf;
+  font-family: 'YuMincho', 'HiraMinProN-W6';
+  font-size: 1.2vw;
+}
+
+body header .main-title {
+  position: relative;
+}
+
+body header .main-title .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+body header .main-title .title a img {
+  width: 20vw;
+}
+
+body header .main-title .reservation {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  display: inline-block;
+  width: 20%;
+  height: 30%;
+  color: #555;
+  font-size: 1.5vw;
+  background: #eed88f;
+  border: solid 5px #555;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+body header .main-title .reservation::before {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 52%;
+  margin-left: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #eed88f;
+  z-index: 2;
+}
+
+body header .main-title .reservation::after {
+  content: "";
+  position: absolute;
+  bottom: -43px;
+  left: 52%;
+  margin-left: -17px;
+  border: 21px solid transparent;
+  border-top: 21px solid #555;
+  z-index: 1;
+}
+
+body header .main-title .reservation:hover {
+  cursor: pointer;
+}
+
+body header .main-title .reservation p {
+  color: #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  line-height: 5vh;
+}
+
+body header .main-title .main-img {
+  overflow: hidden;
+}
+
+body header .main-title .main-img img {
+  width: 100%;
+  vertical-align: middle;
+  -webkit-animation: animationZoom 10s ease-in-out forwards;
+          animation: animationZoom 10s ease-in-out forwards;
+  z-index: -1;
+}
+
+body header .menu-command .menu-btn {
+  display: none;
+}
+
+body header .menu-command .nav {
+  text-align: center;
+  list-style: none;
+  background: #f0e8cf;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+body header .menu-command .nav li {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px dashed;
+  vertical-align: middle;
+}
+
+body header .menu-command .nav li:first-child {
+  border-left: none;
+}
+
+body header .menu-command .nav li a {
+  color: #292929;
+  line-height: 30px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+body header .menu-command .nav li a:hover {
+  color: #000;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+body header .menu-command .bg {
+  display: none;
+}
+
+body main #at-first {
+  margin: 50px auto 0;
+  background-image: url(images/2642257_m.jpg);
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  border: 10px solid rgba(105, 81, 1, 0.7);
+  border-radius: 4px;
+  width: 90%;
+}
+
+body main #at-first .at-first-message {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  width: 70%;
+}
+
+body main #at-first .at-first-message h2 {
+  padding-top: 50px;
+  font-size: 4vw;
+}
+
+body main #at-first .at-first-message p {
+  padding-top: 50px;
+  line-height: 30px;
+}
+
+body main #at-first .at-first-message p a {
+  font-size: 1.5vw;
+  color: #00f;
+}
+
+body main #at-first .at-first-message p.repre {
+  float: right;
+  font-size: 1.7vw;
+}
+
+body main #hotel-intro {
+  clear: both;
+  margin-top: 200px;
+  width: 90%;
+  margin: 200px auto 0;
+}
+
+body main #hotel-intro .intro-title {
+  text-align: center;
+}
+
+body main #hotel-intro .intro-title h2 {
+  font-size: 5vw;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+body main #hotel-intro .onsen, body main #hotel-intro .dishes, body main #hotel-intro .facility-info {
+  margin: 0 auto 100px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main #hotel-intro .onsen__text, body main #hotel-intro .dishes__text, body main #hotel-intro .facility-info__text {
+  padding-left: 50px;
+  width: 50%;
+}
+
+body main #hotel-intro .onsen__text h3, body main #hotel-intro .dishes__text h3, body main #hotel-intro .facility-info__text h3 {
+  display: inline-block;
+  font-size: 3vw;
+  border-bottom: 1px solid;
+}
+
+body main #hotel-intro .onsen__text p, body main #hotel-intro .dishes__text p, body main #hotel-intro .facility-info__text p {
+  padding-top: 30px;
+  padding-right: 50px;
+  line-height: 30px;
+  color: #333;
+}
+
+body main #hotel-intro .onsen__text a, body main #hotel-intro .dishes__text a, body main #hotel-intro .facility-info__text a {
+  text-decoration: none;
+}
+
+body main #hotel-intro .onsen__text a button, body main #hotel-intro .dishes__text a button, body main #hotel-intro .facility-info__text a button {
+  margin-left: 50%;
+  margin-top: 30px;
+  padding: 10px;
+  width: 200px;
+  background: #704d00;
+  border: none;
+  color: #e6e6e6;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px #553a01;
+          box-shadow: 2px 2px #553a01;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+body main #hotel-intro .onsen__text a button:hover, body main #hotel-intro .dishes__text a button:hover, body main #hotel-intro .facility-info__text a button:hover {
+  background: #493200;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-top: 32px;
+  margin-left: calc(50% + 2px);
+  margin-bottom: -2px;
+}
+
+body main #hotel-intro .onsen__img, body main #hotel-intro .dishes__img, body main #hotel-intro .facility-info__img {
+  width: 50%;
+  position: relative;
+}
+
+body main #hotel-intro .onsen__img img, body main #hotel-intro .dishes__img img, body main #hotel-intro .facility-info__img img {
+  position: absolute;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+body main #access {
+  margin: 300px auto 0;
+  width: 80%;
+}
+
+body main #access h3 {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 3vw;
+  border-bottom: 1px solid;
+}
+
+body main #access .access-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+body main #access .access-info .access-map {
+  padding-top: 100px;
+}
+
+body main #access .access-info .access-map img {
+  width: 500px;
+}
+
+body main #access .access-info .address {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+body main #access .access-info .address p {
+  font-size: 1.7vw;
+  line-height: 50px;
+}
+
+body main #access .car {
+  margin: 100px auto 0;
+  width: 100%;
+  position: relative;
+}
+
+body main #access .car h4 {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 2vw;
+  border-bottom: 1px solid;
+}
+
+body main #access .car ul {
+  margin: 20px auto 20px 100px;
+  font-size: 1.5vw;
+}
+
+body main #access .car a {
+  position: absolute;
+  width: 320px;
+  top: 100%;
+  right: 10%;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+body main #access .car a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 2px;
+  height: 20px;
+  background: #000;
+  -webkit-animation: sample01 2s ease-in-out infinite;
+          animation: sample01 2s ease-in-out infinite;
+}
+
+body main #access .car a:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -25px;
+  width: 2px;
+  height: 50vh;
+  background: #000;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-animation: sample02 2s ease-in-out infinite;
+          animation: sample02 2s ease-in-out infinite;
+}
+
+body main #access .public {
+  margin: 100px auto 0;
+  width: 100%;
+  position: relative;
+}
+
+body main #access .public h4 {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 2vw;
+  border-bottom: 1px solid;
+}
+
+body main #access .public .shinkansen, body main #access .public .train, body main #access .public .plane {
+  margin: 20px auto 20px 100px;
+}
+
+body main #access .public .shinkansen h5, body main #access .public .train h5, body main #access .public .plane h5 {
+  font-size: 1.8vw;
+}
+
+body main #access .public .shinkansen ul, body main #access .public .train ul, body main #access .public .plane ul {
+  padding-left: 50px;
+  font-size: 1.5vw;
+}
+
+body main #access .public a {
+  position: absolute;
+  width: 320px;
+  top: 100%;
+  right: 10%;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+body main #access .public a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 2px;
+  height: 20px;
+  background: #000;
+  -webkit-animation: sample01 2s ease-in-out infinite;
+          animation: sample01 2s ease-in-out infinite;
+}
+
+body main #access .public a:after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: -25px;
+  width: 2px;
+  height: 50vh;
+  background: #000;
+  -webkit-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+  -webkit-animation: sample02 2s ease-in-out infinite;
+          animation: sample02 2s ease-in-out infinite;
+}
+
+body footer {
+  margin-top: 100px;
+  background: #eed88f;
+}
+
+body footer #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 300px;
+}
+
+body footer #footer .footer-info {
+  margin-left: 10%;
+}
+
+body footer #footer .footer-info .footer-main-title img {
+  width: 300px;
+  margin-top: 50px;
+}
+
+body footer #footer .footer-info .footer-address span {
+  display: block;
+  line-height: 30px;
+}
+
+body footer #footer .footer-info .footer-address .sns-icon {
+  margin-top: 10px;
+}
+
+body footer #footer .footer-info .footer-address .sns-icon a img {
+  width: 50px;
+  padding-right: 30px;
+}
+
+body footer #footer .footer-nav {
+  padding-top: 50px;
+  padding-right: 300px;
+}
+
+body footer #footer .footer-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  max-width: 320px;
+  max-height: 200px;
+}
+
+body footer #footer .footer-nav ul li {
+  margin-right: 100px;
+  width: 200px;
+}
+
+body footer #footer .footer-nav ul li a {
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5vw;
+  line-height: 50px;
+}
+
+body footer #footer .footer-nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #333;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+body footer #footer .footer-nav ul li a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+body footer small {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  background: #000;
+  color: #fff;
+}
+
+@-webkit-keyframes animationZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes animationZoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes sample01 {
+  0% {
+    -webkit-transform: translateX(0px) skew(31deg);
+            transform: translateX(0px) skew(31deg);
+  }
+  50% {
+    -webkit-transform: translateX(10px) skew(31deg);
+            transform: translateX(10px) skew(31deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) skew(31deg);
+            transform: translateX(0px) skew(31deg);
+  }
+}
+
+@keyframes sample01 {
+  0% {
+    -webkit-transform: translateX(0px) skew(31deg);
+            transform: translateX(0px) skew(31deg);
+  }
+  50% {
+    -webkit-transform: translateX(10px) skew(31deg);
+            transform: translateX(10px) skew(31deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) skew(31deg);
+            transform: translateX(0px) skew(31deg);
+  }
+}
+
+@-webkit-keyframes sample02 {
+  0% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: translateX(10px) rotate(90deg);
+            transform: translateX(10px) rotate(90deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg);
+  }
+}
+
+@keyframes sample02 {
+  0% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg);
+  }
+  50% {
+    -webkit-transform: translateX(10px) rotate(90deg);
+            transform: translateX(10px) rotate(90deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  body main #hotel-intro {
+    width: 95%;
+  }
+  body main #access {
+    width: 90%;
+  }
+  body main #access .access-info {
+    display: block;
+    position: relative;
+  }
+  body main #access .access-info .access-map {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body main #access .access-info .access-map img {
+    width: 100%;
+  }
+  body main #access .access-info .address {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  body main #access .car {
+    float: left;
+    width: 40%;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
+  body main #access .car h4 {
+    margin-left: 0;
+  }
+  body main #access .car ul {
+    margin-left: 50px;
+  }
+  body main #access .car a {
+    position: static;
+    display: inline-block;
+    margin-top: 200px;
+    width: 180px;
+    font-size: 16px;
+  }
+  body main #access .car a:before {
+    top: 340px;
+    left: 200px;
+  }
+  body main #access .car a:after {
+    top: 360px;
+    left: 205px;
+    height: 230px;
+  }
+  body main #access .public {
+    float: right;
+    width: 40%;
+    margin-top: -49vh;
+  }
+  body main #access .public h4 {
+    margin-left: 0;
+  }
+  body main #access .public .shinkansen, body main #access .public .train, body main #access .public .plane {
+    margin-left: 50px;
+  }
+  body main #access .public a {
+    top: 110%;
+    left: 50px;
+    width: 180px;
+    font-size: 16px;
+  }
+  body main #access .public a:before {
+    top: 30px;
+  }
+  body main #access .public a:after {
+    top: 50px;
+    height: 230px;
+  }
+  body main div {
+    clear: both;
+  }
+  body footer #footer .footer-info .footer-main-title img {
+    width: 200px;
+  }
+  body footer #footer .footer-info .footer-address .sns-icon a img {
+    width: 30px;
+  }
+  body footer #footer .footer-nav ul {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 100px;
+  }
+  body footer #footer .footer-nav ul li {
+    margin-right: 30%;
+    width: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  body main #hotel-intro .onsen, body main #hotel-intro .facility-info {
+    display: block;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    position: relative;
+  }
+  body main #hotel-intro .onsen__text, body main #hotel-intro .facility-info__text {
+    padding-top: 400px;
+    padding-left: 0;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body main #hotel-intro .onsen__text p, body main #hotel-intro .facility-info__text p {
+    text-align: left;
+    padding-right: 0;
+  }
+  body main #hotel-intro .onsen__text a button, body main #hotel-intro .facility-info__text a button {
+    margin: 30px auto 0;
+  }
+  body main #hotel-intro .onsen__text a button:hover, body main #hotel-intro .facility-info__text a button:hover {
+    margin-left: 2px;
+  }
+  body main #hotel-intro .onsen__img, body main #hotel-intro .facility-info__img {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 0;
+  }
+  body main #hotel-intro .onsen__img img, body main #hotel-intro .facility-info__img img {
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  body main #hotel-intro .dishes {
+    display: block;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+  }
+  body main #hotel-intro .dishes__img {
+    padding-top: 160px;
+    width: 100%;
+    top: 15%;
+  }
+  body main #hotel-intro .dishes__img img {
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  body main #hotel-intro .dishes__text {
+    width: 90%;
+    padding-top: 250px;
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body main #hotel-intro .dishes__text p {
+    text-align: left;
+    padding-right: 0;
+  }
+  body main #hotel-intro .dishes__text a button {
+    margin: 30px auto 0;
+  }
+  body main #hotel-intro .dishes__text a button:hover {
+    margin-left: 2px;
+  }
+  body main #access {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 650px) {
+  body header .main-title .title {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #a8b401;
+  }
+  body header .main-title .title a img {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    width: 130px;
+  }
+  body header .main-title .reservation {
+    position: fixed;
+    top: 10px;
+    left: 230px;
+    width: 100px;
+    height: 50px;
+    font-size: 8px;
+    border-radius: 5%;
+    border: solid 2px;
+  }
+  body header .main-title .reservation::before {
+    bottom: 20px;
+    left: 3px;
+    border-top: transparent;
+    border-left: 20px solid #eed88f;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  body header .main-title .reservation::after {
+    bottom: 20px;
+    left: 2px;
+    border-top: transparent;
+    border-left: 20px solid;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  body header .main-title .reservation p {
+    line-height: 16px;
+  }
+  body header .main-title .main-img {
+    padding-top: 70px;
+    vertical-align: bottom;
+  }
+  body header .menu-command .menu-button {
+    position: fixed;
+    top: 30px;
+    left: 180px;
+    z-index: 10;
+  }
+  body header .menu-command .menu-button .menu-btn {
+    position: absolute;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+    display: block;
+    border: none;
+  }
+  body header .menu-command .menu-button .menu-btn span {
+    background: #ffffff;
+    height: 3px;
+    display: block;
+    margin-bottom: 9px;
+    border-radius: 25%;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+  body header .menu-command .menu-button .menu-btn span:nth-child(1) {
+    width: 30px;
+  }
+  body header .menu-command .menu-button .menu-btn span:nth-child(2) {
+    width: 30px;
+  }
+  body header .menu-command .menu-button .menu-btn span:nth-child(3) {
+    width: 30px;
+    margin-bottom: 0;
+  }
+  body header .menu-command .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    position: fixed;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 17;
+    table-layout: auto;
+    top: 0;
+    left: -500px;
+    padding-top: 200px;
+    opacity: 0;
+    width: 100%;
+    height: 600px;
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+  }
+  body header .menu-command .nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-left: none;
+    padding: 20px;
+  }
+  body header .menu-command .nav li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    line-height: 70px;
+  }
+  body header .menu-command .bg {
+    top: 0%;
+    left: -100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    display: block;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 120%;
+    background: #fff;
+  }
+  body header .menu-command.menu-open .menu-button {
+    z-index: 20;
+  }
+  body header .menu-command.menu-open .menu-button .menu-btn {
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+  }
+  body header .menu-command.menu-open .menu-button .menu-btn > span:nth-child(1) {
+    -webkit-transform: translate(40vw, 12px) rotate(225deg);
+            transform: translate(40vw, 12px) rotate(225deg);
+    background: #000;
+    opacity: 0.5;
+    -webkit-transition: -webkit-transform ease-in-out .5s;
+    transition: -webkit-transform ease-in-out .5s;
+    transition: transform ease-in-out .5s;
+    transition: transform ease-in-out .5s, -webkit-transform ease-in-out .5s;
+  }
+  body header .menu-command.menu-open .menu-button .menu-btn > span:nth-child(2) {
+    -webkit-transform: translateX(-18px) scale(0);
+            transform: translateX(-18px) scale(0);
+  }
+  body header .menu-command.menu-open .menu-button .menu-btn > span:nth-child(3) {
+    -webkit-transform: translate(40vw, -12px) rotate(-225deg);
+            transform: translate(40vw, -12px) rotate(-225deg);
+    background: #000;
+    opacity: 0.5;
+    -webkit-transition: -webkit-transform ease-in-out .5s;
+    transition: -webkit-transform ease-in-out .5s;
+    transition: transform ease-in-out .5s;
+    transition: transform ease-in-out .5s, -webkit-transform ease-in-out .5s;
+  }
+  body header .menu-command.menu-open .nav {
+    left: 0;
+    opacity: 0.9;
+    list-style: none;
+  }
+  body header .menu-command.menu-open .nav li a {
+    padding-bottom: 3px;
+    position: relative;
+    display: inline-block;
+    color: #000;
+  }
+  body header .menu-command.menu-open .nav li a::after {
+    content: "";
+    width: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #000;
+    display: block;
+  }
+  body header .menu-command.menu-open .nav li a:hover::after {
+    width: 100%;
+    border-bottom: 2px solid #000;
+  }
+  body header .menu-command.menu-open .bg {
+    left: 0;
+    opacity: .9;
+    cursor: pointer;
+  }
+  body main #access .access-info .address {
+    top: 5%;
+  }
+  body main #access .car {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  body main #access .car ul {
+    margin-left: 0;
+    list-style-position: inside;
+  }
+  body main #access .car a {
+    position: absolute;
+    margin-top: 50px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body main #access .car a:before {
+    top: 30px;
+  }
+  body main #access .car a:after {
+    top: 50px;
+    height: 230px;
+  }
+  body main #access .public {
+    width: 100%;
+    margin: 0;
+    margin-top: 170px;
+    text-align: center;
+  }
+  body main #access .public .shinkansen, body main #access .public .train, body main #access .public .plane {
+    margin-left: 0;
+  }
+  body main #access .public .shinkansen ul, body main #access .public .train ul, body main #access .public .plane ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+  body main #access .public a {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  body footer #footer {
+    display: block;
+    margin-top: 200px;
+  }
+  body footer #footer .footer-info {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  body footer #footer .footer-nav {
+    padding: 0px;
+    text-align: center;
+  }
+  body footer #footer .footer-nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 375px;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+  body footer #footer .footer-nav ul li {
+    margin-right: 0px;
+    max-width: 90px;
+  }
+  body footer small {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
