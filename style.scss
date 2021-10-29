@@ -6,7 +6,7 @@
 body {
   background: #f0e8cf;
   font-family: 'YuMincho', 'HiraMinProN-W6';
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   header {
     .main-title {
       position: relative;
@@ -136,7 +136,6 @@ body {
           padding-top: 50px;
           line-height: 30px;
           a {
-            font-size: 1.5vw;
             color: #00f;
           }
           &.repre {
@@ -256,7 +255,6 @@ body {
         }
         ul {
           margin: 20px auto 20px 100px;
-          font-size: 1.5vw;
         }
         a {
           position: absolute;
@@ -308,7 +306,6 @@ body {
           }
           ul {
             padding-left: 50px;
-            font-size: 1.5vw;
           }
         }
         a {
@@ -478,9 +475,9 @@ body {
   25% { 
     transform: scale(1.0, 1.0) translate(0%, 0%); 
   }
-  100% { 
-    transform: scale(1.0, 1.0) translate(0%, 0%);
-  }
+  100% {
+     transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
 }
 
 
