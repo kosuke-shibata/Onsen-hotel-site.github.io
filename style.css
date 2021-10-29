@@ -6,7 +6,7 @@
 body {
   background: #f0e8cf;
   font-family: 'YuMincho', 'HiraMinProN-W6';
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 body header .main-title {
@@ -161,7 +161,6 @@ body main #at-first .at-first-message p {
 }
 
 body main #at-first .at-first-message p a {
-  font-size: 1.5vw;
   color: #00f;
 }
 
@@ -313,7 +312,6 @@ body main #access .car h4 {
 
 body main #access .car ul {
   margin: 20px auto 20px 100px;
-  font-size: 1.5vw;
 }
 
 body main #access .car a {
@@ -376,7 +374,6 @@ body main #access .public .shinkansen h5, body main #access .public .train h5, b
 
 body main #access .public .shinkansen ul, body main #access .public .train ul, body main #access .public .plane ul {
   padding-left: 50px;
-  font-size: 1.5vw;
 }
 
 body main #access .public a {
@@ -833,6 +830,9 @@ body footer small {
 }
 
 @media (max-width: 650px) {
+  body {
+    font-size: 3vw;
+  }
   body header .main-title .title {
     position: fixed;
     width: 100%;
@@ -927,7 +927,7 @@ body footer small {
     table-layout: auto;
     top: 0;
     left: -500px;
-    padding-top: 200px;
+    padding-top: 100px;
     opacity: 0;
     width: 100%;
     height: 600px;
@@ -1019,21 +1019,43 @@ body footer small {
     opacity: .9;
     cursor: pointer;
   }
+  body main #at-first .at-first-message h2 {
+    font-size: 5vw;
+  }
+  body main #at-first .at-first-message p.repre {
+    font-size: 3.5vw;
+  }
+  body main #hotel-intro .intro-title h2 {
+    font-size: 6vw;
+  }
+  body main #hotel-intro .onsen__text h3, body main #hotel-intro .dishes__text h3, body main #hotel-intro .facility-info__text h3 {
+    font-size: 4vw;
+  }
+  body main #access h3 {
+    font-size: 4vw;
+  }
   body main #access .access-info .address {
     top: 5%;
+  }
+  body main #access .access-info .address p {
+    font-size: 2.5vw;
   }
   body main #access .car {
     width: 100%;
     margin-left: 0;
     text-align: center;
   }
+  body main #access .car h4 {
+    font-size: 4vw;
+  }
   body main #access .car ul {
     margin-left: 0;
     list-style-position: inside;
+    font-size: 3.5vw;
   }
   body main #access .car a {
     position: absolute;
-    margin-top: 50px;
+    margin-top: 70px;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1052,12 +1074,20 @@ body footer small {
     margin-top: 170px;
     text-align: center;
   }
+  body main #access .public h4 {
+    font-size: 4vw;
+  }
   body main #access .public .shinkansen, body main #access .public .train, body main #access .public .plane {
     margin-left: 0;
   }
+  body main #access .public .shinkansen h5, body main #access .public .train h5, body main #access .public .plane h5 {
+    font-size: 4vw;
+  }
   body main #access .public .shinkansen ul, body main #access .public .train ul, body main #access .public .plane ul {
-    padding-left: 0;
+    padding: 0;
+    padding-top: 10px;
     list-style-position: inside;
+    font-size: 3.5vw;
   }
   body main #access .public a {
     left: 50%;
@@ -1072,6 +1102,9 @@ body footer small {
     width: 90%;
     text-align: center;
     margin: 0 auto;
+  }
+  body footer #footer .footer-info .footer-address {
+    font-size: 3.5vw;
   }
   body footer #footer .footer-nav {
     padding: 0px;
@@ -1092,6 +1125,9 @@ body footer small {
   body footer #footer .footer-nav ul li {
     margin-right: 0px;
     max-width: 90px;
+  }
+  body footer #footer .footer-nav ul li a {
+    font-size: 2.2vw;
   }
   body footer small {
     margin-top: 50px;
